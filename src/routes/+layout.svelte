@@ -20,10 +20,31 @@
 		{@render children()}
 	</main>
 	
-	<footer class="py-16 border-t border-surface-200 mt-24">
-		<div class="max-w-5xl mx-auto px-8 text-sm text-text-secondary flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-			<p>&copy; {new Date().getFullYear()} - Content is the interface.</p>
-			<p>Precision over decoration.</p>
+	<footer class="mt-32 border-t border-surface-200">
+		<div class="max-w-5xl mx-auto px-8 md:px-12 py-12">
+			<!-- Row Atas: Nama + Tagline -->
+			<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-10">
+				<div>
+					<a href="/" class="text-3xl font-bold tracking-tighter text-white hover:text-accent transition-colors duration-300">agungm.</a>
+					<p class="text-text-secondary text-sm mt-1 font-mono">Content is the interface.</p>
+				</div>
+				<!-- Nav Singkat -->
+				<nav class="flex gap-6 text-sm text-text-secondary">
+					<a href="/category/html" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">HTML</a>
+					<a href="/category/css" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">CSS</a>
+					<a href="/category/javascript" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">Javascript</a>
+					<a href="/about" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">About</a>
+				</nav>
+			</div>
+
+			<!-- Garis Tipis Aksen -->
+			<div class="h-px w-full bg-gradient-to-r from-accent via-surface-200 to-transparent mb-6"></div>
+
+			<!-- Row Bawah: Copyright + Filosofi -->
+			<div class="flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-text-secondary font-mono">
+				<p>&copy; {new Date().getFullYear()} Agung Marwanto. All rights reserved.</p>
+				<p class="italic opacity-60">Precision over decoration.</p>
+			</div>
 		</div>
 	</footer>
 </div>
