@@ -21,30 +21,11 @@
 	</main>
 	
 	<footer class="mt-32 border-t border-surface-200">
-		<div class="max-w-5xl mx-auto px-8 md:px-12 py-12">
-			<!-- Row Atas: Nama + Tagline -->
-			<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-10">
-				<div>
-					<a href="/" class="text-3xl font-bold tracking-tighter text-white hover:text-accent transition-colors duration-300">agungm.</a>
-					<p class="text-text-secondary text-sm mt-1 font-mono">Content is the interface.</p>
-				</div>
-				<!-- Nav Singkat -->
-				<nav class="flex gap-6 text-sm text-text-secondary">
-					<a href="/category/html" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">HTML</a>
-					<a href="/category/css" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">CSS</a>
-					<a href="/category/javascript" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">Javascript</a>
-					<a href="/about" class="hover:text-white transition-colors duration-250 hover:underline underline-offset-4">About</a>
-				</nav>
-			</div>
-
-			<!-- Garis Tipis Aksen -->
-			<div class="h-px w-full bg-gradient-to-r from-accent via-surface-200 to-transparent mb-6"></div>
-
-			<!-- Row Bawah: Copyright + Filosofi -->
-			<div class="flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-text-secondary font-mono">
-				<p>&copy; {new Date().getFullYear()} Agung Marwanto. All rights reserved.</p>
-				<p class="italic opacity-60">Precision over decoration.</p>
-			</div>
+		<div class="max-w-5xl mx-auto px-8 md:px-12 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+			<p class="text-sm text-text-secondary font-mono">
+				made with <span class="text-red-400">♥</span> and a glass of <span class="text-amber-400">☕</span> by <a href="/about" class="text-white hover:text-accent transition-colors underline underline-offset-4">agungm.</a>
+			</p>
+			<p class="text-xs text-text-secondary opacity-40 font-mono italic">&copy; {new Date().getFullYear()}</p>
 		</div>
 	</footer>
 </div>
