@@ -32,7 +32,7 @@
   {:else}
     <div class="flex flex-col border-t border-surface-200">
       {#each data.articles as article}
-        <a href={`/articles/${article.slug}`} class="py-8 border-b border-surface-200 group block relative">
+        <a href={`/${data.urlCategory}/${article.slug}`} class="py-8 border-b border-surface-200 group block relative">
           <div class="absolute inset-x-0 inset-y-0 bg-surface-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 -mx-6 rounded-lg pointer-events-none"></div>
           <div class="flex flex-col md:flex-row md:justify-between md:items-baseline gap-2 mb-3">
             <h2 class="text-2xl font-semibold tracking-tight text-white group-hover:text-accent transition-colors duration-300">{article.title}</h2>

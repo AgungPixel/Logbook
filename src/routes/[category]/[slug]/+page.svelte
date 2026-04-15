@@ -48,7 +48,7 @@
   </div>
 
   <div class="mt-24 pt-8 border-t border-surface-200 flex justify-between items-center">
-    <a href="/articles" class="text-sm font-medium hover:text-accent transition-colors duration-300 group inline-flex items-center text-text-secondary">
+    <a href={`/${(article.tags?.[0] || 'articles').toLowerCase()}`} class="text-sm font-medium hover:text-accent transition-colors duration-300 group inline-flex items-center text-text-secondary">
       <svg class="w-4 h-4 mr-2 transform group-hover:-translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path></svg>
       <span class="link-hover">Back to Index</span>
     </a>

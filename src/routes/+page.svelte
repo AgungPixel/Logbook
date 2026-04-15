@@ -25,7 +25,7 @@
       <span>{formatDate(featuredArticle.createdAt)}</span>
     </div>
     
-    <a href={`/articles/${featuredArticle.slug}`} class="block pl-2">
+    <a href={`/${(featuredArticle.tags?.[0] || 'post').toLowerCase()}/${featuredArticle.slug}`} class="block pl-2">
       <h1 class="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1] mb-6 hover:text-accent transition-colors duration-300 text-white">
         {featuredArticle.title}
       </h1>
@@ -53,7 +53,7 @@
     <div class="flex flex-col gap-10">
       {#each otherArticles as article}
         <article class="group">
-          <a href={`/articles/${article.slug}`} class="block">
+          <a href={`/${(article.tags?.[0] || 'post').toLowerCase()}/${article.slug}`} class="block">
             <span class="text-xs font-mono text-surface-200 group-hover:text-accent transition-colors duration-300 mb-2 block">{formatDate(article.createdAt)}</span>
             <h3 class="text-2xl font-semibold mb-3 group-hover:text-accent transition-colors duration-300 tracking-tight text-white">{article.title}</h3>
             <p class="text-base text-text-secondary line-clamp-2 leading-relaxed">{article.excerpt}</p>
@@ -62,7 +62,7 @@
       {/each}
     </div>
     
-    <a href="/articles" class="mt-8 inline-flex items-center text-sm font-medium hover:text-accent transition-colors duration-300 group">
+    <a href="/html" class="mt-8 inline-flex items-center text-sm font-medium hover:text-accent transition-colors duration-300 group">
       <span class="link-hover text-white group-hover:text-accent">View all entries</span>
       <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-300 text-white group-hover:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l4-4m4-4H3"></path></svg>
     </a>

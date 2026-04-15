@@ -6,7 +6,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		orderBy: { createdAt: 'desc' }
 	});
     
-	const categoryName = params.name.toLowerCase();
+	const categoryName = params.category.toLowerCase();
     const articles = allArticles.filter(article => {
         // Alias penanganan: Jika nama rute js, cocokkan dengan javascript (tags)
         const targetCategory = categoryName === 'js' ? 'javascript' : categoryName;
@@ -16,6 +16,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	return { 
         articles,
-        category: categoryName === 'js' ? 'Javascript' : params.name
+        category: categoryName === 'js' ? 'Javascript' : params.category,
+        urlCategory: params.category
     };
 };
