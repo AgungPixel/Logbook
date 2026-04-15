@@ -2,7 +2,7 @@
 </script>
 
 <svelte:head>
-  <title>About | agungm.</title>
+  <title>About | agungnotes.</title>
 </svelte:head>
 
 <div class="max-w-3xl mt-16 mb-32">
@@ -23,7 +23,7 @@
     </ul>
 
     <p>
-      Reach out via <a href="mailto:hello@agungm.com">email</a> or find me on <a href="https://github.com">GitHub</a>.
+      Reach out via <a href="mailto:hello@agungnotes.com">email</a> or find me on <a href="https://github.com">GitHub</a>.
     </p>
   </div>
 </div>

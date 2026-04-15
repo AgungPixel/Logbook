@@ -23,7 +23,7 @@
 </script>
 
 <svelte:head>
-  <title>Admin Login | agungm.</title>
+  <title>Admin Login | agungnotes.</title>
 </svelte:head>
 
 <div class="min-h-[70vh] flex items-center justify-center">

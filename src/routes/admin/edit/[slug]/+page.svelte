@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-  <title>Edit Post | agungm.</title>
+  <title>Edit Post | agungnotes.</title>
 </svelte:head>
 
 <div class="max-w-4xl mt-16 mb-32 mx-auto px-6">

@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Admin Dashboard | agungm.</title>
+  <title>Admin Dashboard | agungnotes.</title>
 </svelte:head>
 
 <div class="max-w-5xl mt-16 mb-32 mx-auto px-6">

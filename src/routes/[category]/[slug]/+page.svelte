@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-  <title>{article.title} | agungm.</title>
+  <title>{article.title} | agungnotes.</title>
 </svelte:head>
 
 <article class="max-w-3xl mt-16 mb-32 mx-auto">

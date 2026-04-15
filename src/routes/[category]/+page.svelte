@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>{data.category.toUpperCase()} | agungm.</title>
+  <title>{data.category.toUpperCase()} | agungnotes.</title>
 </svelte:head>
 
 <div class="max-w-3xl mt-16 mb-32">

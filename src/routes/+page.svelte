@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>agungm. | Content is the interface</title>
+  <title>agungnotes. | Content is the interface</title>
 </svelte:head>
 
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 mb-32 items-start mt-12">
