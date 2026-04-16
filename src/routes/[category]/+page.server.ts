@@ -10,6 +10,8 @@ export const load: PageServerLoad = async ({ params }) => {
     const articles = allArticles.filter(article => {
         // Alias penanganan: Jika nama rute js, cocokkan dengan javascript (tags)
         const targetCategory = categoryName === 'js' ? 'javascript' : categoryName;
+        // Syarat profesional: Jika pengguna mengakses kategori 'general' dan artikel sama sekali tidak punya tags
+        if (targetCategory === 'general' && (!article.tags || article.tags.length === 0)) return true;
         // Cari setidaknya 1 tagar yang sesuai namanya secara loose
         return article.tags.some(tag => tag.toLowerCase() === targetCategory);
     });

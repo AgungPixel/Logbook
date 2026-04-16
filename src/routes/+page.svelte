@@ -25,7 +25,7 @@
       <span>{formatDate(featuredArticle.createdAt)}</span>
     </div>
     
-    <a href={`/${(featuredArticle.tags?.[0] || 'post').toLowerCase()}/${featuredArticle.slug}`} class="block pl-2">
+    <a href={`/${(featuredArticle.tags?.[0] || 'general').toLowerCase()}/${featuredArticle.slug}`} class="block pl-2">
       <h1 class="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1] mb-6 hover:text-accent transition-colors duration-300 text-white">
         {featuredArticle.title}
       </h1>
@@ -53,7 +53,7 @@
     <div class="flex flex-col gap-10">
       {#each otherArticles as article}
         <article class="group">
-          <a href={`/${(article.tags?.[0] || 'post').toLowerCase()}/${article.slug}`} class="block">
+          <a href={`/${(article.tags?.[0] || 'general').toLowerCase()}/${article.slug}`} class="block">
             <span class="text-xs font-mono text-surface-200 group-hover:text-accent transition-colors duration-300 mb-2 block">{formatDate(article.createdAt)}</span>
             <h3 class="text-2xl font-semibold mb-3 group-hover:text-accent transition-colors duration-300 tracking-tight text-white">{article.title}</h3>
             <p class="text-base text-text-secondary line-clamp-2 leading-relaxed">{article.excerpt}</p>
